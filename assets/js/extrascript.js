@@ -1,5 +1,5 @@
 (function loadPageTitle() {
-    let pageTitle = "ProProperty Guru";
+    let pageTitle = "FcTcF Group";
     document.title = pageTitle;
 })();
 
@@ -19,5 +19,5 @@
         headerTextLeft = document.createElement('headerTextLeft');
         document.head.appendChild(headerTextLeft);
     }
-    headerTextLeft.textContent = "ProProperty Guru";
+    headerTextLeft.textContent = "FcTcF Group";
 })();
