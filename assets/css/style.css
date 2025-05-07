@@ -25,7 +25,7 @@
   --raisin-black-1: hsl(227, 29%, 13%);
   --raisin-black-2: hsl(229, 17%, 19%);
   --yellow-green: hsl(89, 72%, 45%);
-  --orange-soda: hsl(9, 100%, 62%);
+  --orange-soda: oklch(67% 0.15 30); /* Modern color space */
   --cultured-1: hsl(0, 0%, 93%);
   --cultured-2: hsl(192, 24%, 96%);
   --misty-rose: hsl(7, 56%, 91%);
@@ -142,7 +142,10 @@ body {
   #REUSED STYLE
 \*-----------------------------------*/
 
-.container { padding-inline: 15px; }
+.container {
+  margin-inline: auto; /* Instead of margin: 0 auto */
+  padding-inline: 15px; /* Instead of padding-left/right */
+}
 
 button, a { transition: var(--transition); }
 
@@ -217,6 +220,8 @@ button, a { transition: var(--transition); }
 .section-title {
   text-align: var(--text-align, center);
   margin-bottom: var(--margin-bottom, 50px);
+  content-visibility: auto;
+  contain-intrinsic-size: 1000px;
 }
 
 .card-badge {
@@ -856,6 +861,8 @@ button, a { transition: var(--transition); }
   align-items: center;
   gap: 10px;
   box-shadow: var(--shadow-1);
+  will-change: transform;
+  transition: transform 0.3s ease;
 }
 
 .features-card:is(:hover, :focus) { background: var(--orange-soda); }

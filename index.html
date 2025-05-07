@@ -4,21 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>From Credit to Cash Flow - Real Estate Agency</title>
 
-    <!-- 
-    - favicon
-  -->
-    <link rel="shortcut icon" href="" type="image/png" />
-
-    <!-- 
-    - custom css link
-  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/png"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style2.css" />
 
-    <!-- 
-    - google font link
-  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -32,10 +27,6 @@
   </head>
 
   <body>
-    <!-- 
-    - #HEADER
-  -->
-
     <header class="header" data-header>
       <div class="overlay" data-overlay></div>
 
@@ -67,8 +58,6 @@
                 </a>
               </li>
             </ul>
-
-            <!-- <button class="header-top-btn">Add Listing</button> -->
           </div>
         </div>
       </div>
@@ -133,24 +122,6 @@
           </nav>
 
           <div class="header-bottom-actions">
-            <!-- <button class="header-bottom-actions-btn" aria-label="Search">
-              <ion-icon name="search-outline"></ion-icon>
-
-              <span>Search</span>
-            </button> -->
-
-            <!-- <button class="header-bottom-actions-btn" aria-label="Profile">
-              <ion-icon name="person-outline"></ion-icon>
-
-              <span>Profile</span>
-            </button> -->
-
-            <!-- <button class="header-bottom-actions-btn" aria-label="Cart">
-              <ion-icon name="cart-outline"></ion-icon>
-
-              <span>Cart</span>
-            </button> -->
-
             <button
               class="header-bottom-actions-btn"
               data-nav-open-btn
@@ -167,28 +138,20 @@
 
     <main>
       <article>
-        <!-- 
-        - #HERO
-      -->
-
         <section class="hero" id="home">
           <div class="container">
             <div class="hero-content">
               <p class="hero-subtitle">
                 <ion-icon name="home"></ion-icon>
-
                 <span>Real Estate Agency</span>
               </p>
 
               <h2 class="h1 hero-title">Find Your Dream House By Us</h2>
-
               <p class="hero-text">
-                Where luxury living meets smart investment..
+                Where luxury living meets smart investment.
               </p>
 
-              <a href="#contact"
-                ><button class="btn">Make An Inquiry</button></a
-              >
+              <a href="#contact" class="btn">Make An Inquiry</a>
             </div>
 
             <figure class="hero-banner">
@@ -196,14 +159,13 @@
                 src="./assets/images/hero-banner.png"
                 alt="Modern house model"
                 class="w-100"
+                width="600"
+                height="400"
+                loading="eager"
               />
             </figure>
           </div>
         </section>
-
-        <!-- 
-        - #ABOUT
-      -->
 
         <section class="about" id="about">
           <div class="container">
@@ -278,10 +240,6 @@
           </div>
         </section>
 
-        <!-- 
-        - #SERVICE
-      -->
-
         <section class="service" id="service">
           <div class="container">
             <p class="section-subtitle">Our Services</p>
@@ -354,10 +312,6 @@
             </ul>
           </div>
         </section>
-
-        <!-- 
-        - #PROPERTY
-      -->
 
         <section class="property" id="property">
           <div class="container">
@@ -609,10 +563,6 @@
           </div>
         </section>
 
-        <!-- 
-        - #FEATURES
-      -->
-
         <section class="features">
           <div class="container">
             <p class="section-subtitle">Our Amenities</p>
@@ -703,49 +653,35 @@
           </div>
         </section>
 
-        <!-- 
+        <section class="features" id="partners">
+          <div class="container">
+            <p class="section-subtitle">Partners</p>
 
-                <!-- 
-        - #PARTNERS
-      -->
+            <h2 class="h2 section-title">Partners</h2>
 
-      <section class="features" id="partners">
-        <div class="container">
-          <p class="section-subtitle">Partners</p>
+            <ul class="features-list">
+              <li>
+                <a
+                  href="https://www.fortuneessien.com/"
+                  class="features-card"
+                  target="_self"
+                >
+                  <div class="card-icon">
+                    <ion-icon name="people-outline"></ion-icon>
+                    <ion-icon name="people-circle-outline"></ion-icon>
+                  </div>
 
-          <h2 class="h2 section-title">Partners</h2>
+                  <h3 class="card-title">Fortune Essien Investment</h3>
 
-          <ul class="features-list">
-   
-
-            <li>
-              <a
-                href="https://www.fortuneessien.com/"
-                class="features-card"
-              >
-                <div class="card-icon">
-                  <ion-icon name="people-outline"></ion-icon>
-                  <ion-icon name="people-circle-outline"></ion-icon>
-                </div>
-
-                <h3 class="card-title">Fortune Essien Investment</h3>
-
-                <div class="card-btn">
-                  <ion-icon name="arrow-forward-outline"></ion-icon>
-                </div>
-              </a>
-            </li>
-
-          </ul>
-          <div></div>
-        </div>
-      </section>
-
-      <!-- -->
-
-                <!-- 
-        - #CONTACT
-      -->
+                  <div class="card-btn">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <div></div>
+          </div>
+        </section>
 
         <section class="features" id="contact">
           <div class="container">
@@ -806,11 +742,92 @@
           </div>
         </section>
 
-        <!-- -->
+        <section class="features" id="inquiry">
+          <div class="container">
+            <p class="section-subtitle">Inquiry</p>
+            <h2 class="h2 section-title">Submit an Inquiry</h2>
 
-        <!-- 
-        - #CTA
-      -->
+            <div class="contact-form-container">
+              <form
+                action="https://formspree.io/f/your-form-id"
+                method="POST"
+                class="contact-form"
+              >
+                <div class="form-group">
+                  <label for="fullName">Full Name *</label>
+                  <input type="text" id="fullName" name="fullName" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email *</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message *</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label>Preferred Method of Contact *</label>
+                  <div class="radio-group">
+                    <div class="radio-item">
+                      <input
+                        type="radio"
+                        id="email-pref"
+                        name="contactPreference"
+                        value="email"
+                        required
+                      />
+                      <label for="email-pref">Email</label>
+                    </div>
+
+                    <div class="radio-item">
+                      <input
+                        type="radio"
+                        id="phone-pref"
+                        name="contactPreference"
+                        value="phone"
+                        required
+                      />
+                      <label for="phone-pref">Phone Call</label>
+                    </div>
+
+                    <div class="radio-item">
+                      <input
+                        type="radio"
+                        id="text-pref"
+                        name="contactPreference"
+                        value="text"
+                        required
+                      />
+                      <label for="text-pref">Text Message</label>
+                    </div>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn form-btn">
+                  Submit Inquiry
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
 
         <section class="cta">
           <div class="container">
@@ -835,10 +852,6 @@
       </article>
     </main>
 
-    <!-- 
-    - #FOOTER
-  -->
-
     <footer class="footer">
       <div class="footer-top">
         <div class="container">
@@ -855,14 +868,6 @@
             </p>
 
             <ul class="contact-list">
-              <!-- <li>
-                <a href="tel:+17706484939" class="contact-link">
-                  <ion-icon name="call-outline"></ion-icon>
-
-                  <span>770-648-4939</span>
-                </a>
-              </li> -->
-
               <li>
                 <a
                   href="mailto:contact@fromcredit2cashflow.com"
@@ -909,22 +914,11 @@
       </div>
     </footer>
 
-    <!-- 
-    - custom js link
-  -->
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/extrascript.js"></script>
-
-    <!-- 
-    - ionicon link
-  -->
+    <script src="./assets/js/script.js" defer></script>
+    <script src="./assets/js/extrascript.js" defer></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
   </body>
 </html>
