@@ -1,23 +1,36 @@
-(function loadPageTitle() {
-    let pageTitle = "FcTcF Group";
-    document.title = pageTitle;
-})();
+'use strict';
 
-(function loadfavIcon() {
-    var link = document.querySelector("link[rel~='icon']");
+// Page Title Handler
+const updatePageTitle = () => {
+    const pageTitle = "FcTcF Group";
+    document.title = pageTitle;
+};
+
+// Favicon Handler
+const updateFavicon = () => {
+    let link = document.querySelector("link[rel~='icon']");
     if (!link) {
         link = document.createElement('link');
         link.rel = 'icon';
         document.head.appendChild(link);
     }
-    link.href = '../../favicon.png';
-})();
+    link.href = './assets/images/favicon.png'; // Fix relative path
+};
 
-(function loadheaderLeft() {
-    var headerTextLeft = document.getElementById("headerTextLeft");
-    if (!headerTextLeft) {
-        headerTextLeft = document.createElement('headerTextLeft');
-        document.head.appendChild(headerTextLeft);
+// Header Text Handler
+const updateHeaderText = () => {
+    const headerElement = document.getElementById("headerTextLeft");
+    if (!headerElement) {
+        const newHeader = document.createElement('div'); // Use proper HTML element
+        newHeader.id = 'headerTextLeft';
+        newHeader.textContent = "FcTcF Group";
+        document.body.insertBefore(newHeader, document.body.firstChild); // Better placement
     }
-    headerTextLeft.textContent = "FcTcF Group";
-})();
+};
+
+// Initialize all updates when DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+    updatePageTitle();
+    updateFavicon();
+    updateHeaderText();
+});
